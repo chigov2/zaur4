@@ -10,7 +10,6 @@
     <bean id="myPet"
             class="com.chigov.demo.Dog"
             scope="prototype">
-
     </bean>
 
 </beans>

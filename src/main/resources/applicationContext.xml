@@ -18,7 +18,6 @@
 
         <property name="lastName" value="${person.lastName}"/>
         <property name="age" value="${person.age}"/>
-
     </bean>
 
 </beans>
