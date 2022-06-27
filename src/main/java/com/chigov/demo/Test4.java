@@ -9,15 +9,15 @@ public class Test4 {
         Dog dog = context.getBean("myPet",Dog.class);
         Dog dog2 = context.getBean("myPet",Dog.class);
 
-        dog.setName("Belkaa");
-        dog2.setName("Strelkaa");
-        System.out.println(dog.getName());
-        System.out.println(dog2.getName());
-
-
-        System.out.println("Compare: " + (dog==dog2));
-        System.out.println(dog);
-      System.out.println(dog2);
+//        dog.setName("Belkaa");
+//        dog2.setName("Strelkaa");
+//        System.out.println(dog.getName());
+//        System.out.println(dog2.getName());
+//
+//
+//        System.out.println("Compare: " + (dog==dog2));
+//        System.out.println(dog);
+//      System.out.println(dog2);
         context.close();
     }
 }
