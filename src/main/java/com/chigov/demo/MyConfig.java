@@ -1,9 +1,20 @@
 package com.chigov.demo;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@ComponentScan("com.chigov.demo")
+@PropertySource("classpath:application.properties")
+//@ComponentScan("com.chigov.demo")
 public class MyConfig {
+    @Bean
+    public Pet catBean(){
+        return new Cat();
+    }
+    @Bean
+    public Person personBean(){
+        return  new Person(catBean());
+    }
 }
