@@ -10,10 +10,12 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class LoggingAspect {
 
-    @Before("execution(public void get*())")
+    @Before("execution(* get*(..))")
     public void loggingBeforeAdvice(){
-        System.out.println("loggingBeforeAdvice: Попытка получить книгу");
+
+        System.out.println("loggingBeforeAdvice: Попытка получить книгу или журнал");
     }
+
     @Before("execution(public void return*())")
     public void loggingBeforeReturnAdvice(){
         System.out.println("loggingBeforeReturnAdvice: Попытка вернуть книгу");
