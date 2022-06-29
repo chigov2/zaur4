@@ -75,11 +75,6 @@ public class LoggingAspect {
 //    }
 
 
-
-
-
-
-
     @Before("aop.aspects.MyPointCuts.allAddMethods()")
     public void BeforeAddLoggingAdvice(JoinPoint joinPoint){
 
