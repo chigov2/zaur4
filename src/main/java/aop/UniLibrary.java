@@ -17,10 +17,11 @@ public class UniLibrary extends AbstractLibrary{
         System.out.println("------------------------------------");
     }
 
-    public void returnBook(){
+    public String returnBook(){
 
         System.out.println("We return book to University library");
-        System.out.println("------------------------------------");
+        return "Tom Sawyer";
+
     }
     public void returnMagazine(){
 
