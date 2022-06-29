@@ -13,11 +13,9 @@ public class NewLoggingAspect {
     public Object aroundReturnBook(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         System.out.println("aroundReturnBook -> в библиотеку пытаются вернуть книгу");
 
-        Long begin = System.currentTimeMillis();
         Object targetMethodResult = proceedingJoinPoint.proceed();
-        Long stop = System.currentTimeMillis();
+
         System.out.println("aroundReturnBook -> в библиотеку вернули книгу");
-        System.out.println("Exec time = "+ (stop - begin));
 
         return targetMethodResult;
 
