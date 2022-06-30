@@ -15,9 +15,9 @@ public class Test3 {
             bookName = uniLibrary.returnBook();
         } catch (Exception e) {
             System.out.println("Error: " +e);
-//            bookName = "Неизвестное название книги";
+            bookName = "Неизвестное название книги";
            // e.printStackTrace();
-            throw e;                  //!!!!!!!!!!!!!!!!!!!!!!!
+            //throw e;                  //!!!!!!!!!!!!!!!!!!!!!!!
         }
 
         System.out.println("Book returned to University library: " + bookName);
